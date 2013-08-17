@@ -1,11 +1,11 @@
 #!/bin/bash
-#ssh awshost1
-#Configure all in aws
+
+#Set upt git
 cd $HOME
-sudo apt-get install -y git-core
-git config --global user.name "Jose Gonzalez"
-git config --global user.email "josecarlosgonz@gmail.com"
-git clone https://github.com/startup-class/setup.git
+sudo apt-get install -y git-core 
+git config --global user.name "Jose Gonzalez" 
+git config --global user.email "josecarlosgonz@gmail.com" 
+git clone https://github.com/startup-class/setup.git 
 ./setup/setup.sh
 
 #Developer environment set up
