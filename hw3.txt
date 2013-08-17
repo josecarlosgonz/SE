@@ -1,0 +1,10 @@
+#HW 3
+sudo apt-get install -y git-core
+heroku login #josecarlos@uchicago.edu
+ssh-keygen -t rsa
+heroku keys:add
+# 3) Clone a sample repo and push to heroku
+git clone https://github.com/heroku/node-js-sample.git
+cd node-js-sample
+heroku create
+git push heroku master

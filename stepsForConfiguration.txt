@@ -1,0 +1,7 @@
+#Load configuration to aws
+
+## copy configuration file from local machine to vm
+scp fullConfigureAWS.sh awshost1~/
+
+##execute configuration file
+./fullConfigureAWS.shex

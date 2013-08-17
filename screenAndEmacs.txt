@@ -1,0 +1,21 @@
+c#Screen commands
+
+$ cd $HOME
+$ wget raw.github.com/startup-class/dotfiles/master/.screenrc -O .screenrc
+$ head .screenrc
+$ screen
+
+ctrl + T + ? # Help menu
+screen -d # detach screen
+screen -r return to screen
+
+
+## Install emacs
+
+cd $HOME
+sudo apt-get install -y git-core # if you haven’t already git clone https://github.com/startup-class/setup.git ./setup/setup.sh
+exit
+
+
+#Trick to delete data on emacs
+M-x normal-erase-is-backspace-mode

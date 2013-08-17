@@ -1,0 +1,5 @@
+#Change configuration
+nano
+nano ~/.ssh/config
+#Put new ec name
+ec2-54-213-27-114.us-west-2.compute.amazonaws.com
