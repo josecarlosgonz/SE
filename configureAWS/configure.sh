@@ -6,4 +6,5 @@
 #read NAME
 #echo "Hi $NAME !"
 
-nano ~/.ssh/config
+#~/.ssh/config
+wget https://github.com/pepecarlos/SE/blob/master/configureAWS/fullConfigureAWS.sh
