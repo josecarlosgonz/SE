@@ -2,9 +2,47 @@
 sudo apt-get install -y git-core
 heroku login #josecarlos@uchicago.edu
 ssh-keygen -t rsa
-heroku keys:add
+heroku keys:add #Add the default ssh key used for github
+heroku keys #check keys
 # 3) Clone a sample repo and push to heroku
-git clone https://github.com/heroku/node-js-sample.git
-cd node-js-sample
+git clone https://github.com/pepecarlos/bitstarter
+cd bitstarter
 heroku create
 git push heroku master
+emacs web.js
+git add web.js; git commit -m "Updated web.js"
+git push heroku master
+#push to github account
+git push origin master
+
+##After typing the html
+git add index.html; git commit -m "Added wireframe" ; git push heroku master
+git push origin master
+
+##Grader
+emacs -nw grader.js
+
+crl-x 3 #divide screen in 2 ##Space means they are not simultaneous
+crl-c ! #launches node repl
+
+meta-i or meta-o #go back and forth between buffers
+
+crl-c crl-j #copy one line of code to the other buffer
+crl-space bar #mark an area
+crl-c crl-r #copy paste the whole area
+
+#Add to github and heroku
+
+git add grader.js checks.json
+git commit -m "Added grader js files"
+git push heroku master
+git pull #sincronize changes
+
+### Run checks
+chmod u+x grader.js #execute by owner #read the file and execute by owner
+git push origin master
+git add checks.json; git commit -m "Updated checks"
+alias allIn='git push heroku master; git push origin master'
+### Install restler to get urls
+##Modified code with info from forums
+alias allIn='git push heroku master; git push origin master'
