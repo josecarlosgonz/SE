@@ -1,3 +1,4 @@
+#! usr/bin/bash
 #HW 3
 sudo apt-get install -y git-core
 heroku login #josecarlos@uchicago.edu
